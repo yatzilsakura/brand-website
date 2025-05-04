@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Yatzil Sakura - Game Design, Brand Strategy, Social Media&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide-react@0.294.0/dist/umd/lucide.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Apply Inter font globally */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Smooth scrolling behavior */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Simple animation for sections (kept for potential future use, but sections start visible) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.fade-in-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(20px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.6s ease-out, transform 0.6s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.fade-in-section.is-visible {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-rose-50 text-gray-800"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-white shadow-sm sticky top-0 z-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="container mx-auto px-6 py-4 flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-2xl font-bold text-pink-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Yatzil Sakura</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-x-4 hidden md:flex"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#hero" class="text-gray-600 hover:text-pink-600 transition duration-300"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#services" class="text-gray-600 hover:text-pink-600 transition duration-300"&gt;Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="text-gray-600 hover:text-pink-600 transition duration-300"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="mobile-menu-button" class="md:hidden focus:outline-none text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"&gt;&lt;line x1="4" x2="20" y1="12" y2="12"/&gt;&lt;line x1="4" x2="20" y1="6" y2="6"/&gt;&lt;line x1="4" x2="20" y1="18" y2="18"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobile-menu" class="hidden md:hidden bg-white py-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#hero" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300"&gt;Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="hero" class="bg-gradient-to-br from-pink-50 to-rose-100 py-20 md:py-32 fade-in-section is-visible"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4"&gt;Yatzil Sakura&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-xl md:text-2xl text-pink-700 font-medium mb-8"&gt;Creative Strategist: Game Design, Brand Enhancement &amp; Social Engagement&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-3xl mx-auto text-gray-600 text-lg mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Transforming concepts into compelling games, refining brand identities for maximum impact, and crafting engaging social media narratives. Let's build something amazing together.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Get In Touch</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services" class="py-20 md:py-28 bg-white fade-in-section is-visible"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6"&gt;My Expertise&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-600 text-lg mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Project scope and pricing are tailored to your specific needs and discussed during an initial consultation.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-block p-4 bg-pink-100 text-pink-600 rounded-full mb-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad"&gt;&lt;line x1="6" x2="10" y1="12" y2="12"/&gt;&lt;line x1="8" x2="8" y1="10" y2="14"/&gt;&lt;line x1="15" x2="15.01" y1="13" y2="13"/&gt;&lt;line x1="18" x2="18.01" y1="11" y2="11"/&gt;&lt;rect width="20" height="12" x="2" y="6" rx="2"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold text-gray-800 mb-3"&gt;Game Design &amp; Planning&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>From initial concept to detailed design documents. I help shape raw ideas into engaging and viable game experiences, focusing on mechanics, narrative, and player engagement.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-block p-4 bg-rose-100 text-rose-600 rounded-full mb-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"&gt;&lt;path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/&gt;&lt;path d="M9 18h6"/&gt;&lt;path d="M10 22h4"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold text-gray-800 mb-3"&gt;Brand Review &amp; Strategy&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Analyzing brand presence and communication to identify opportunities for improvement. I provide actionable recommendations to enhance brand perception and connection with the target audience.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-block p-4 bg-pink-100 text-pink-600 rounded-full mb-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-heart"&gt;&lt;path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/&gt;&lt;path d="M14.8 7.5a1.4 1.4 0 0 0-2.1 0L12 8.1l-.7-.6a1.4 1.4 0 0 0-2.1 0A1.5 1.5 0 0 0 9 9c0 1.1.9 2 2.1 3.1L12 13l.9-.9C14.1 11 15 10.1 15 9a1.5 1.5 0 0 0-.2-1.5z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold text-gray-800 mb-3"&gt;Social Media Management&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Developing and executing social media strategies that build community, increase engagement, and align with overall brand goals. Content creation, scheduling, and performance analysis.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-pink-50 to-rose-100 fade-in-section is-visible"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"&gt;Let's Collaborate&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-2xl mx-auto text-gray-700 text-lg mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Interested in working together or have a question? Feel free to reach out. I'm always excited to discuss new projects and opportunities.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8"&gt; &lt;a href="mailto:yatzilcocom@gmail.com" class="flex items-center justify-center space-x-3 text-lg text-pink-600 hover:text-pink-800 transition duration-300 font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"&gt;&lt;rect width="20" height="16" x="2" y="4" rx="2"/&gt;&lt;path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;yatzilcocom@gmail.com&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                 </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-2xl mx-auto text-gray-600 text-md mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>For comprehensive branding packages or logo design, please visit my husband's portfolio:</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://quielorodriguez.myportfolio.com/work" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 underline font-medium transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Quielo Rodriguez Design</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-gray-800 text-gray-400 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.instagram.com/yjc_00/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-gray-400 hover:text-white transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"&gt;&lt;rect width="20" height="20" x="2" y="2" rx="5" ry="5"/&gt;&lt;path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/&gt;&lt;line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;@yjc_00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; &lt;span id="current-year"&gt;&lt;/span&gt; Yatzil Sakura. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initialize Lucide Icons</p>
+<p class="p1"><span class="Apple-converted-space">        </span>lucide.createIcons();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Mobile Menu Toggle</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const menuButton = document.getElementById('mobile-menu-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenu = document.getElementById('mobile-menu');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>menuButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Close mobile menu when a link is clicked</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileLinks = mobileMenu.querySelectorAll('a');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Add a small delay to allow scroll to happen before closing menu</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>mobileMenu.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, 150);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Set current year in footer</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('current-year').textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Simple Fade-in Animation on Scroll (Kept but sections start visible)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sections = document.querySelectorAll('.fade-in-section');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const options = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>root: null, // relative to document viewport</p>
+<p class="p1"><span class="Apple-converted-space">            </span>rootMargin: '0px',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>threshold: 0.1 // trigger when 10% of the section is visible</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const observer = new IntersectionObserver((entries, observer) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Check if the section is intersecting (mostly for potential future use)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>entry.target.classList.add('is-visible');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, options);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Observe sections (though they start visible now)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sections.forEach(section =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>observer.observe(section);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
