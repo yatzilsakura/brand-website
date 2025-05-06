@@ -18,7 +18,7 @@
         html {
             scroll-behavior: smooth;
         }
-        /* Simple animation for sections (kept for potential future use, but sections start visible) */
+        /* Simple animation for sections */
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -30,37 +30,37 @@
         }
     </style>
 </head>
-<body class="bg-rose-50 text-gray-800">
+<body class="bg-orange-100 text-gray-800">
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-pink-600">
+            <div class="text-2xl font-bold text-rose-400">
                 Yatzil Sakura
             </div>
             <div class="space-x-4 hidden md:flex">
-                <a href="#hero" class="text-gray-600 hover:text-pink-600 transition duration-300">Home</a>
-                <a href="#services" class="text-gray-600 hover:text-pink-600 transition duration-300">Services</a>
-                <a href="#contact" class="text-gray-600 hover:text-pink-600 transition duration-300">Contact</a>
+                <a href="#hero" class="text-gray-600 hover:text-rose-400 transition duration-300">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-rose-400 transition duration-300">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-rose-400 transition duration-300">Contact</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden focus:outline-none text-gray-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
             </button>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
-            <a href="#hero" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300">Home</a>
-            <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300">Services</a>
-            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-pink-50 hover:text-pink-600 transition duration-300">Contact</a>
+            <a href="#hero" class="block px-6 py-2 text-gray-600 hover:bg-rose-50 hover:text-rose-400 transition duration-300">Home</a>
+            <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-rose-50 hover:text-rose-400 transition duration-300">Services</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-rose-50 hover:text-rose-400 transition duration-300">Contact</a>
         </div>
     </header>
 
-    <section id="hero" class="bg-gradient-to-br from-pink-50 to-rose-100 py-20 md:py-32 fade-in-section is-visible">
+    <section id="hero" class="bg-gradient-to-br from-orange-50 to-rose-100 py-20 md:py-32 fade-in-section is-visible">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Yatzil Sakura</h1>
-            <p class="text-xl md:text-2xl text-pink-700 font-medium mb-8">Creative Strategist: Game Design, Brand Enhancement & Social Engagement</p>
+            <p class="text-xl md:text-2xl text-rose-400 font-medium mb-8">Creative Strategist: Game Design, Brand Enhancement & Social Engagement</p>
             <p class="max-w-3xl mx-auto text-gray-600 text-lg mb-10">
                 Transforming concepts into compelling games, refining brand identities for maximum impact, and crafting engaging social media narratives. Let's build something amazing together.
             </p>
-            <a href="#contact" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 text-lg">
+            <a href="#contact" class="bg-rose-400 hover:bg-rose-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 text-lg">
                 Get In Touch
             </a>
         </div>
@@ -73,8 +73,8 @@
                 Project scope and pricing are tailored to your specific needs and discussed during an initial consultation.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
-                    <div class="inline-block p-4 bg-pink-100 text-pink-600 rounded-full mb-5">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
+                    <div class="inline-block p-4 bg-rose-100 text-rose-400 rounded-full mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Game Design & Planning</h3>
@@ -83,8 +83,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
-                    <div class="inline-block p-4 bg-rose-100 text-rose-600 rounded-full mb-5">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
+                    <div class="inline-block p-4 bg-rose-100 text-rose-400 rounded-full mb-5">
                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Brand Review & Strategy</h3>
@@ -93,8 +93,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
-                    <div class="inline-block p-4 bg-pink-100 text-pink-600 rounded-full mb-5">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center hover:shadow-md transition duration-300">
+                    <div class="inline-block p-4 bg-rose-100 text-rose-400 rounded-full mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-heart"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M14.8 7.5a1.4 1.4 0 0 0-2.1 0L12 8.1l-.7-.6a1.4 1.4 0 0 0-2.1 0A1.5 1.5 0 0 0 9 9c0 1.1.9 2 2.1 3.1L12 13l.9-.9C14.1 11 15 10.1 15 9a1.5 1.5 0 0 0-.2-1.5z"/></svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Social Media Management</h3>
@@ -106,20 +106,21 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-pink-50 to-rose-100 fade-in-section is-visible">
+    <section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-orange-50 to-rose-100 fade-in-section is-visible">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Let's Collaborate</h2>
             <p class="max-w-2xl mx-auto text-gray-700 text-lg mb-10">
                 Interested in working together or have a question? Feel free to reach out. I'm always excited to discuss new projects and opportunities.
             </p>
-            <div class="inline-block bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8"> <a href="mailto:yatzilcocom@gmail.com" class="flex items-center justify-center space-x-3 text-lg text-pink-600 hover:text-pink-800 transition duration-300 font-medium">
+            <div class="inline-block bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8"> 
+                <a href="mailto:yatzilcocom@gmail.com" class="flex items-center justify-center space-x-3 text-lg text-rose-400 hover:text-rose-500 transition duration-300 font-medium">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     <span>yatzilcocom@gmail.com</span>
                  </a>
             </div>
             <p class="max-w-2xl mx-auto text-gray-600 text-md mb-10">
                 For comprehensive branding packages or logo design, please visit my husband's portfolio:
-                <a href="https://quielorodriguez.myportfolio.com/work" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 underline font-medium transition duration-300">
+                <a href="https://quielorodriguez.myportfolio.com/work" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-500 underline font-medium transition duration-300">
                     Quielo Rodriguez Design
                 </a>.
             </p>
@@ -163,24 +164,23 @@
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Simple Fade-in Animation on Scroll (Kept but sections start visible)
+        // Simple Fade-in Animation on Scroll
+        // Sections start visible by default with 'is-visible' class in the HTML
         const sections = document.querySelectorAll('.fade-in-section');
         const options = {
-            root: null, // relative to document viewport
+            root: null, 
             rootMargin: '0px',
-            threshold: 0.1 // trigger when 10% of the section is visible
+            threshold: 0.1 
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
-                // Check if the section is intersecting (mostly for potential future use)
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
                 }
             });
         }, options);
 
-        // Observe sections (though they start visible now)
         sections.forEach(section => {
             observer.observe(section);
         });
